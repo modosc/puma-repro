@@ -17,7 +17,4 @@ RUN bundle install
 
 COPY . .
 
-EXPOSE 3000
-ENV PORT=3000
-
-CMD ["bundle", "exec", "puma", "-C", "config.rb", "config.ru"]
+CMD ["bundle", "exec", "puma", "-b", "tcp://0.0.0.0:3000", "config.ru"]
