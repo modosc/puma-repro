@@ -17,4 +17,4 @@ RUN bundle install
 
 COPY . .
 
-CMD ["bundle", "exec", "puma", "-b", "tcp://0.0.0.0:3000", "config.ru"]
+CMD ["bin/puma", "-b", "tcp://0.0.0.0:3000", "config.ru"]
