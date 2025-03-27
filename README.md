@@ -2,7 +2,7 @@
 
 reproduction of exit code issue.
 
-## in a container:
+## container example
 
 ```bash
 $ bundle install
@@ -44,7 +44,7 @@ work ~/git/horizon-api [main|⚑ 82]$ docker container ls -a |grep puma-repro
 d5e835a18867   puma-repro                                              "bin/puma -b tcp://0…"   2 minutes ago    Exited (1) About a minute ago                                        jolly_leavitt
 ```
 
-## in a terminal
+## terminal example
 
 ```bash
 $ bin/puma -b tcp://0.0.0.0:3000 config.ru
